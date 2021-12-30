@@ -76,7 +76,7 @@ export const useStyle = (w : number, h : number, scale : number) => {
             const left = `${(w - size) * i}px`
             const height = `${size}px`
             const width = `${size}px`
-            const top = `${-size + (h / 2) * sf2}px`
+            const top = `${-size + (h / 2 - size / 2 + size / 10) * sf2}px`
             return {
                 position, 
                 left, 
