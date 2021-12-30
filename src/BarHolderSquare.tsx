@@ -1,5 +1,6 @@
 import React from 'react'
 import {useStyle} from './hooks'
+import withContext from './withContext'
 
 interface BHSProps {
     w : number, h : number, scale : number, onClick : Function
@@ -15,4 +16,4 @@ const BarHolderSquare = (props : BHSProps) => {
     )
 }
 
-export default BarHolderSquare
+export default withContext(BarHolderSquare)
